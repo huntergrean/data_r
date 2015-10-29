@@ -25,3 +25,22 @@ for the && and || operators, they will only be applied to the first value of a v
 
 **all()** This function returns true if ALL elements of the vector meet the logical condition passed to it
 
+##Lesson 9: Functions
+### General Notes
+You can pass functions as arguments to other functions
+You can set default values when writing functions where
+You can pass a function as an argument without having defined the passed function. This is an anonymous function.
+
+
+When sending values in the parenthesis to a function, we call this passing an argument to a function
+
+### New commands
+**Sys.Date()**  returns the date
+
+**mean()** returns the arithmetical average of all passed arguments
+
+**args()** pass a function to this function to see its arguments and default values
+
+**sd()** calculates the standard deviation
+
+**paste()** will combine any number of strings into one string
