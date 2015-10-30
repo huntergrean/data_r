@@ -28,11 +28,17 @@ for the && and || operators, they will only be applied to the first value of a v
 ##Lesson 9: Functions
 ### General Notes
 You can pass functions as arguments to other functions
-You can set default values when writing functions where
+You can set default values when writing functions 
 You can pass a function as an argument without having defined the passed function. This is an anonymous function.
-
+All arguments passed to a function after "..." MUST have a default value
 
 When sending values in the parenthesis to a function, we call this passing an argument to a function
+
+User-defined binary operators have the following syntax:
+
+      %[whatever]% 
+      
+where [whatever] represents any valid variable name.
 
 ### New commands
 **Sys.Date()**  returns the date
@@ -44,3 +50,19 @@ When sending values in the parenthesis to a function, we call this passing an ar
 **sd()** calculates the standard deviation
 
 **paste()** will combine any number of strings into one string
+
+##Lesson 10: Apply Functions
+
+###General Notes
+
+
+###New commands
+head() will reveal column names and first 6 lines of data.frame
+
+dim() will reveal the number of rows and columns of a data.frame
+
+class() will reveal the class of an object. each column of a data.frame as its own class
+
+
+
+
