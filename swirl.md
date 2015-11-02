@@ -57,6 +57,8 @@ where [whatever] represents any valid variable name.
 
 In general, if the result of sapply() is a list where every element is of length one, then sapply() returns a vector. If the result is a list where every element is a vector of the same length (> 1), sapply() returns a matrix. If sapply() can't figure things out, then it just returns a list, no different from what lapply() would give you.
 
+lapply(OBJECT, function(dummy) dummy[2]) will return a list containing the second item from each element of the OBJECT list. Note that the function takes one argument, dummy, which is just a 'dummy variable' that takes on the value of each element of OBJECT, in turn. By defining our own function inside the call to lapply let's us do things in one line of code when R's built in functions isn't an option
+
 ###New commands
 head() will reveal column names and first 6 lines of data.frame
 
@@ -71,6 +73,7 @@ sapply(OBJECT, FUNCTION) will take an object and apply passed function to each c
 sum(DATAFRAMENAME#COLUMN_NAME) will apply the sum function to columns indicated in the data frame
 
 NEW_VARIABLE_NAME <- DATAFRAME_NAME[,XX:YY] will subset the contents of the dataframe into a new dataframe with the XXth to the YYth columns. By having a blank before the column, this means all rows will be kept but only the XX:YY columns will be kept.
+
 
 
 
