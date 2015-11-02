@@ -55,6 +55,7 @@ where [whatever] represents any valid variable name.
 
 ###General Notes
 
+In general, if the result of sapply() is a list where every element is of length one, then sapply() returns a vector. If the result is a list where every element is a vector of the same length (> 1), sapply() returns a matrix. If sapply() can't figure things out, then it just returns a list, no different from what lapply() would give you.
 
 ###New commands
 head() will reveal column names and first 6 lines of data.frame
@@ -62,6 +63,14 @@ head() will reveal column names and first 6 lines of data.frame
 dim() will reveal the number of rows and columns of a data.frame
 
 class() will reveal the class of an object. each column of a data.frame as its own class
+
+lapply(OBJECT, FUNCTION) will take an object and apply the specified function to each of its component and return a list
+
+sapply(OBJECT, FUNCTION) will take an object and apply passed function to each component and return a vector, matrix, or list
+
+sum(DATAFRAMENAME#COLUMN_NAME) will apply the sum function to columns indicated in the data frame
+
+NEW_VARIABLE_NAME <- DATAFRAME_NAME[,XX:YY] will subset the contents of the dataframe into a new dataframe with the XXth to the YYth columns. By having a blank before the column, this means all rows will be kept but only the XX:YY columns will be kept.
 
 
 
