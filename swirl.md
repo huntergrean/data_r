@@ -74,7 +74,17 @@ sum(DATAFRAMENAME#COLUMN_NAME) will apply the sum function to columns indicated 
 
 NEW_VARIABLE_NAME <- DATAFRAME_NAME[,XX:YY] will subset the contents of the dataframe into a new dataframe with the XXth to the YYth columns. By having a blank before the column, this means all rows will be kept but only the XX:YY columns will be kept.
 
+unique() returns the unique values from an object (it eliminates all repeats)
 
+## Lesson 11: Vapply and Tapply
+### General notes
 
+Vapply() can be thought of as safer as it will impose requirements on the returned information and if they are not met, you will not have undetected errors
 
+### New commands
 
+vapply(OBJECT, FUNCTION, DATATYPE(LENGTH)) will take an object, apply a function and return the specified datatype with the specified length. If the lengths vary from the object, you will receive an error.
+
+table(OBJECT$COLUMN_NAME) will return  a table with a count of how many observations fall into each of the categorical values. Lets say we have 3 categories (A, B, C) this will return the number of observations that fall into each.
+
+tapply(OBJECT$COLUMN_NAME, OBJECT2$COLUMN_NAME2, FUNCTION) will return the first column_name data organized by column_name2 applying the passed function
