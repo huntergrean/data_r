@@ -88,3 +88,30 @@ vapply(OBJECT, FUNCTION, DATATYPE(LENGTH)) will take an object, apply a function
 table(OBJECT$COLUMN_NAME) will return  a table with a count of how many observations fall into each of the categorical values. Lets say we have 3 categories (A, B, C) this will return the number of observations that fall into each.
 
 tapply(OBJECT$COLUMN_NAME, OBJECT2$COLUMN_NAME2, FUNCTION) will return the first column_name data organized by column_name2 applying the passed function
+
+##Lesson 12: Looking at Data
+
+###General notes
+
+###New Commands
+ls() lists all the variables in your current workspace
+
+dim() will say the number of rows followed by the number of column
+
+nrow() and ncol() will give the respective number of rows or columns of a passed object
+
+object.size() will show the amount of memory an object is consuming in the memory
+
+names() will show the names of the columns of a data.frame object
+
+head(OBJECT, NUMBER) or tail() will show the first/last number of rows you specify. Default is 6
+
+summary() will show summary statistical data for each of the columns
+
+table(OBJECT$COLUMN_NAME) will show you each of the categorical values and the number of times they occur
+
+str(OBJECT) will show a summary of information about a data.frame and its columns. You can also use it on a function
+
+
+
+
