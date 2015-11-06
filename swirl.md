@@ -112,6 +112,26 @@ table(OBJECT$COLUMN_NAME) will show you each of the categorical values and the n
 
 str(OBJECT) will show a summary of information about a data.frame and its columns. You can also use it on a function
 
+##Lesson 13: Simulation
+###General Notes
+
+Each probability distribution in R has:
+* r function for random
+* d function for density
+* p function for probability
+* q function for quantile
+
+###New Commands
+
+sample(x, size, replace = FALSE, prob = NULL) chooses a value to display from the vector x, and does this SIZE number of times. You can specify probabilities of outcomes with prob = c(PROBABILITY_VECTOR) that contains
+
+LETTERS is a predefined object in R that contains each letter of the alphabet
+
+rbinom(number of observations, size of trials, the probability of success)
+
+rnorm(number of observations, mean = x, sd = X)
+rpois()
+replcate()
 
 
 
