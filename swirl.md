@@ -133,5 +133,48 @@ rnorm(number of observations, mean = x, sd = X)
 rpois()
 replcate()
 
+##Lesson 14: Dates and times
 
+### General Notes
 
+R stores date objects into unique object classes: either POSIXct or POSIXlt. POSIXct is the default
+
+The base date for date storage is January 1, 1970
+
+You can perform arithmetic and Boolean functions on time objects 
+
+### New commands
+
+Sys.Date() yields the date
+
+unclass(OBJECT) will show you the raw value stored in an object versus the formatted output that an object class will output
+
+as.Date("") will coerce a character string into a date object
+
+Sys.time() will yield current system time
+
+as.POSIXlt() will coerce an object into the POSIXlt object formatted
+
+LISTOBJECT$valuename will return the value associated with a list
+
+weekdays() months() quarters() all return the respective value associated with a particular date (i.e., Monday, November, Q4)
+
+strptime() converts a character vector into POSIXlt. You must specify the format however with passed parameters
+
+difftime() allows you to compare different time objects and calculate the delta between them and specify the units to return the value
+
+##Lesson 15: Graphics
+
+###General Notes
+
+If there are only two columns in a data frame and you plot the data frame, it will automatically make the first column the X axis and the second column the Y unless you specify
+
+http://www.ling.upenn.edu/~joseff/rstudy/week4.html provides a useful overview of many elements of base graphics
+
+###New Commands
+
+plot(DATAFRAME) will generate a scatterplot based on the data in the passed data frame.
+
+boxplot(DATAFRAME) will generate a boxplot but the arguments for this function are a bit more complicated than plot. 
+
+hist(vector) will generate a histogram based on the data passed
