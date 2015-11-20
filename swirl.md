@@ -1,4 +1,4 @@
-# Swirl() Notes
+# Swirl() R Programming Notes
 ## Lesson 8: Logic
 ### General notes
 Some examples of Logical operators in R include:
@@ -178,3 +178,28 @@ plot(DATAFRAME) will generate a scatterplot based on the data in the passed data
 boxplot(DATAFRAME) will generate a boxplot but the arguments for this function are a bit more complicated than plot. 
 
 hist(vector) will generate a histogram based on the data passed
+
+# Swirl() Data Analysis
+##Lesson 1: Central Tendency
+###General Notes
+We installed the plotrix and openintro packages.
+
+Remember: a population is the complete set of items to which a data set is refferring to
+
+a subset of those items is a **sample**
+
+The purpose of analyzing a sample is to draw conclusions about the population from which the sample was selected. This field is called **inferential statistics** 
+
+Describing the sample is **descriptive statistics**
+
+A good way to begin describing data is by looking at the "middle" or the central tendency of your sample: mean, median, mode
+
+###New Commands
+
+OBJECTNAME$variableName will extract a column from a dataframe
+
+mean(object) or median(object) 
+
+table(OBJECT or OBJECT$variableName) will give you a top row of all the values and a bottom row of their frequency count
+
+
