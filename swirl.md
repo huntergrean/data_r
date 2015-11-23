@@ -202,4 +202,22 @@ mean(object) or median(object)
 
 table(OBJECT or OBJECT$variableName) will give you a top row of all the values and a bottom row of their frequency count
 
+##Lesson 2: Dispersion
+###General Notes
+The height of the box in the box and whisker plots are referred to as the interquartile range: the 25th and 75th percentiles respectively. These values are the medians of the bottom and top half respectively 
+
+The whiskers represent the lower and upper 25th percentiles but may not include outlier values
+
+Outliers may represent anomalies OR entry/collection errors
+
+###New Commands
+range(OBJECT) will give you the min and mix values for a vector
+
+max(object) yields the maximum value
+
+min(object) yields the minimum value
+
+var(object) yields variance
+
+sd(object) yields the standard deviation
 
