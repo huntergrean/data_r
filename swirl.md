@@ -221,3 +221,8 @@ var(object) yields variance
 
 sd(object) yields the standard deviation
 
+##Lesson 3: Data Visualization
+###General Notes
+Think about skew has being the direction of the mean relative to the median
+###New Commands
+summary(OBJECT$COLUMN) will give summary statistics for a given numeric vector
