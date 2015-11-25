@@ -226,3 +226,31 @@ sd(object) yields the standard deviation
 Think about skew has being the direction of the mean relative to the median
 ###New Commands
 summary(OBJECT$COLUMN) will give summary statistics for a given numeric vector
+
+# Swirl() Regression Models
+## Lesson 1 Introduction
+###General notes
+
+Slides for this and other Data Science courses may be found at github https://github.com/DataScienceSpecialization/courses if you want to use them. 
+They must be downloaded as a zip file and viewed locally. This lesson corresponds to Regression_Models/01_01_introduction
+
+Sir Francis Galton did some of the pioneering work on "regression towards the mean" by looking at the heights of parents and their children
+
+Because dot plots contain many points on top of each other, it is hard to see data concentration. We use jitter to account for this.
+
+When calling summary on a regression line:
+
+* VAR_NAME estimate is the slope of the line, or the co-efficient associated with the independent variable
+* standard error represents the standard deviation for the slope of the line (in the VAR_NAME estimate)
+
+Galton's work demonstrates the regression to the mean principle in that each centimeter of parent's height adds or substracts .65 cm from the expected value of children's height 
+
+###New Commands
+
+plot(YAXISOBJECT ~ XAXMISOBJECT, DATAFRAME_CONTAINING_OBJECTS) to get a dot plot the objects referenced
+
+jitter(OBJECT, factor = X) will add noise to numbers to avoid dot stacking on a dot plot
+
+lm(DEPENDENT_VAR ~ INDEPENDENT_VAR, DATAFRAME_CONTAINING_OBJECTS) will create a linear model, similar to plot 
+
+abline(LINEARMODEL) will super-impose a line on top of a plot 
