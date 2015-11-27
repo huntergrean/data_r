@@ -254,3 +254,48 @@ jitter(OBJECT, factor = X) will add noise to numbers to avoid dot stacking on a 
 lm(DEPENDENT_VAR ~ INDEPENDENT_VAR, DATAFRAME_CONTAINING_OBJECTS) will create a linear model, similar to plot 
 
 abline(LINEARMODEL) will super-impose a line on top of a plot 
+
+
+# Design a product approach
+
+## Step 1: CLARIFY: Understand the problem
+* Know WHO: who will be primary user base
+* Know WHY: what are the main goals
+* Know HOW: under what special context or conditions is the product going to be used
+
+## Step 2: STRUCTURIZE: Outline approach: GUCCI (Goals of the product, Users and customers, Cases use cases, Current products and their weaknesses, Improvements to shore up weak areas)
+* G First, let's talk about the goals of the product
+* U Next, let's cover who the intended users and customers are and their properties
+* C Then, let's talk about the use cases for each user
+* C Next, let's talk about current products and how well they address these use cases
+* I Finally, what features or changes would improve those weak spots?
+* Summarize!
+
+## Step 3: Users and customers
+* Who are they? Are they one in the same or is this a two sided platform?
+* Who are all the potential demographics?
+	* New users and non-technical users
+	* main stream users
+	* power, technical, or professional users
+	* children
+	* elderly or disabled
+* What are the special properties or requirements for each of the users
+
+## Step 4: What are the use cases for each of the users?
+
+For each user:
+* what will they use the product to do?
+* What tasks and scenarios  will the product be used in?
+* Why are they using the product?
+* What are their goals for using the product and how will you help them achieve this?
+
+## Step 5: How well are current products doing for each use case? What are the obvious weak spots?
+For each use case:
+* assess how will current solutions address them
+* What are the user's biggest issues with the product?
+* How can design be altered to help?
+
+## Step 6: What features or changes can improve on the weak spots?
+* Identify features that can improve on the previously identified weakspots
+* For each feature, be prepared to dive deeper into the HOW it could be done
+* For each feature 
