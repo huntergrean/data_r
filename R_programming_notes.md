@@ -30,4 +30,35 @@
 * tapply needs X which is a vector
 * it needs an index which is a a categorical vector of the same length as the original vector
 * a function that will be applied to the subset
-*
+* It will then apply the function on each block of the vector that has the same value in the factor index
+
+##split will break a vector down into groups determined by the specified factors or list of factors
+* splt(OBJECTyouWANTtoSPLIT, FACTORforSPLITTING)
+* you can also split on multiple levels
+* you can use the interaction function to look at factor combinations OR
+* you can pass a list like this: split(OBJECT, list(factor1, factor2))
+* specify drop =TRUE then it will clear out the empty factor combinations
+
+##Debugging: when something is wrong
+There are 4 levels of indicators that there is an issue
+* message: not inteherently bad but a message function was tipped off. execution continues
+* warning: something is wrong but not fatal, execution continues
+* error: a fatal problem has occurred and execution stops. A stop function was tripped off
+* condiition: a generic concept for indicating that something unexpected occurred; programmers can create their own conditions
+
+When something has gone wrong with a function:
+* what was your input? What was the ACTUAL input? How did you call it?
+* What did you expect?
+* What did you get as output?
+* How was this different from what you were expecting
+* Were your expectations corret in the first place?
+* Can you reproduce the problem predictably? 
+
+traceback
+* will tell you where the error occured within the function stack
+* Very handy to print out traceback when getting help
+* will only give you the most recent error
+debug
+* you can debug any function
+* first thing it does is to print the entire code for the function
+* 
