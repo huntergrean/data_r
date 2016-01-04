@@ -61,4 +61,22 @@ traceback
 debug
 * you can debug any function
 * first thing it does is to print the entire code for the function
+
+#Week 4: Simulation and Profiling
+##str function
+Compactly displays internal structure of an R object
+* Alternative to summary
+* Well suited for displaying large lists or nested lists
+* One line of output for each object
+
+str(FUNCTION) will display one line on how to use the function
+
+str(OBJECT) will display a one line summary of data type and the first couple values in the vector
+
+str(DATAFRAME) will display number of observations, the names of the columns and the first few values
+
+##Simulation: Random Number Generation
+RNORM, DNORM, PNORM, RPOIS are native existing number distribution
+* Each has a D (density) R (random number generation) P (cumulative distribution) and Q (quantile) function
+* The random number seed must be set for reproducibility: set.seed(1) will set the seed to 1
 * 
