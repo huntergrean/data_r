@@ -4,6 +4,7 @@
 * the returned list will contain the results of the object and the function you passed to lapply
 * to pass additional arguments (and thus override defaults) with lapply, you will pass it those arguments after the function
 * you can define a function and pass it in the paranthesis
+* 
 ##sapply(OBJECT, FUNCTION)
 * essentially the same thing as lapply, except it does not always return a list: it will try to return a simple data type
 * if it can't figure it out, it will just return a list
